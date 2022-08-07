@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{ /*section*/
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    /* background-color: #111111bd; */
+    background-color: rgba(56, 56, 56, 0.733);
+}
+.registro-container{ /*div (h1>form)*/
+    margin: auto; /*centrar el contenido  */
+    height:100%;
+    width: 100%;
+    max-width:550px;   /* siempre y cuando sea px*/
+    max-height:600px ;
+    border: 3px solid rgba(7, 7, 7, 0.66);
+    background-color: rgba(17, 243, 107, 0.721);
+    border-radius:20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+div{  /*form(div)*/
+    width: 420px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding: 10px;
+    background-color: rebeccapurple;
+    overflow-y: auto;
+}
+.input{
+    border: 2px solid orange;
+    border-radius: 6px;
+    padding: 1.5%;
+    width:55%;
+}
+/*df*/
+
+.button{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #dca100;
+    padding: 4px ;
+    border: 1px solid;
+    border-radius: 6px;
+    transition: background-color .3s;
+}
+.button:hover{
+    color: #f26250;
+    background-color:#fff ;
+}
+@media(max-width:820px) {
+
+    .registro-container{ /*div (h1>form)*/
+        max-width:350px;   /* siempre y cuando sea px*/
+        max-height:400px ; 
+        border: 2px solid rgba(7, 7, 7, 0.66);
+        background-color: rgba(17, 243, 107, 0.721);
+        border-radius:10px; 
+        overflow-y:auto;
+    }
+    div{  /*form(div**)*/
+        width: 100%;
+        margin-top: 3px;
+        padding: 2px;
+        background-color: rebeccapurple;
+    }
+    .input{
+        border: 2px solid orange;
+        border-radius: 6px;
+        padding: 1.5%;
+        width:55%;
+    }
+}
